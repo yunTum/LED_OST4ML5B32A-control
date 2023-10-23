@@ -8,7 +8,6 @@
 void setup() {
   pinMode(DIN_H_PIN, OUTPUT);
   pinMode(DIN_L_PIN, OUTPUT);
-  Serial.begin(115200);
 }
 
 void loop() {
@@ -50,7 +49,5 @@ void create_byte(unsigned int number) {
   for(int i=128; i>0; i = i >> 1){
     state = ((number & i) != 0);
     create_bit(state);
-    Serial.print(state);
   }
-  Serial.println("");
 }
