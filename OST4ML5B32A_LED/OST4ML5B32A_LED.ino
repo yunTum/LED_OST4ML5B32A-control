@@ -33,6 +33,24 @@ void color_test() {
   create_color(0, 255, 255);
 }
 
+void color_test2() {
+  int i = 255;
+  int j = 0;
+  int k = 255;
+  for(int d=0; d<100; d++){
+    create_color(i, j, k);
+    i -= 2;
+    j += 2;
+    k -= 2;
+  }
+  for(int d=0; d<100; d++){
+    create_color(i, j, k);
+    i += 2;
+    j -= 2;
+    k += 2;
+  }
+}
+
 void create_bit(bool state) {
   digitalWrite(DIN_H_PIN, HIGH);
   digitalWrite(DIN_L_PIN, LOW);
