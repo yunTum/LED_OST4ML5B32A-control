@@ -1,5 +1,3 @@
-#include <stdlib.h>
-
 #define DIN_H_PIN 5
 #define DIN_L_PIN 6
 #define PIN_DELAY 50
